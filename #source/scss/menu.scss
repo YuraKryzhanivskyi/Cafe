@@ -1,0 +1,222 @@
+.menu {
+    margin: 90px 0px 0px 0px;
+    text-align: center;
+    &__body {
+    }
+}
+
+.tabs {
+   
+}
+.tabs-triggers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom:  15px ;
+
+    &__item {
+        display: flex;
+        flex: 0 0 10%;
+        height: 50px;
+        margin: 0px 10px 10px 10px;
+        justify-content: center;
+        align-items: center;
+        //outline-offset:-2px;
+        //outline: 2px solid $color1;
+        padding: 0 10px;
+        color: $color3;
+        font-size: 16px;
+        font-family: "Oswald";
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 2px solid $colbg;
+        border-radius: 10px;
+        transition: all 0.2s linear;
+        
+        @media (max-width:$md2+px){
+            flex: 0 0 25%;
+            margin: 0px 5px 5px 5px;
+        }
+       
+        &:hover{
+            color: $color4;
+            background-color: $color1;
+            border-color: transparent;
+           
+        }
+        &._active{
+            color: $color4;
+            background-color: $color1;
+            border-color: transparent;
+            
+        }
+
+    }
+}
+
+.menu-slider{
+    position: relative;
+    padding: 0 60px;
+}
+.tabs-content {
+
+    &__item {
+        display: none;
+        &._active{
+            display: block;
+            //flex-direction: column;
+            //min-width: 0;
+        }
+    }
+    &__body {
+        //display: flex;
+        //flex-wrap: wrap;
+        margin: 0 -10px;
+        //align-items: flex-start;
+        @media (max-width:$md4+px){
+            margin: 0;
+        }
+    }
+
+    &__card {
+       
+        //flex: 0 0 100%;
+        //min-width: 0;
+        
+        //overflow: hidden;
+    //    @media (max-width:$md2+px){
+    //        flex: 0 0 33.3333%;
+    //    }
+    //    @media (max-width:$md3+px){
+    //        flex: 0 0 50%;
+    //    }
+    //    @media (max-width:$md4+px){
+    //        flex: 0 0 100%;
+    //    }
+    }
+}
+
+.tabs-content-card {
+        padding: 10px 12px;
+        
+        font-family: "Oswald";
+        //@media (max-width:$md4+px){
+            //padding: 10px 50px;
+        //}
+        
+        &__body {
+        justify-self: center;
+        //width: 250px;
+        //min-height: 100;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        border: 1px solid  rgba(0,0,0,0.2);
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        &:hover{
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+    }
+
+    &__picture {
+        flex: 0 0 30%;
+        min-height: 200px;
+        overflow: hidden;
+        position: relative;
+
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__info {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 10px;
+    }
+
+    &__info-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    &__info-top-title {
+        display: inline-flex;
+        flex: 0 0 60%;
+        text-transform: uppercase;
+        font-size: 24px;
+        padding-right: 5px;
+        color: $color2;
+        text-align: left;
+        font-weight: 600;
+        overflow: hidden;
+    }
+
+    &__info-top-time {
+        display: flex;
+        flex: 0 1 40%;
+        align-items: center;
+        ////background-color: red;
+        justify-content: flex-end;
+        color: $color1;
+        & img{
+            padding-right: 5px;
+            height: 18px;
+        }
+    }
+
+    &__info-desc {
+        flex: 1 0 auto;
+        font-family:$fontFamily;
+        color: $color3;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    &__info-bottom {
+        flex: 0 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__info-bottom-price {
+        display: block;
+        font-size: 24px;
+        font-family: "Oswald";
+        color: $color1;
+    }
+
+    &__info-bottom-bag {
+        background-color: $color1;
+        box-shadow: 0 0 10px 2px $color1;
+        padding: 10px;
+        display: flex;
+        height: 50px;
+        width: 50px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all .2s linear;
+        &:hover{
+            padding: 12px;
+        }
+        
+        & img{
+            height:100%;
+            
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.social{
+    position: fixed;
+    right: 10px;
+    bottom: 25px;
+    z-index: 100000;
+    
+        &__item{
+            display:block;
+            opacity: 0.7;
+            overflow: hidden;
+            border-radius: 20px;
+            transition: all .3s linear;
+        }
+    
+        &__item:hover{
+            opacity: 1;
+            //transform: scale(1.1);
+            //border-radius: 0;
+        }
+    }
+//===========================================================================

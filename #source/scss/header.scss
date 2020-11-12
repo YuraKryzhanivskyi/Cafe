@@ -1,0 +1,118 @@
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-bottom: 1px $color2 solid;
+    z-index: 5;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: saturate(180%) blur(20px);
+        background-color: rgba(0, 0, 0, 0.72);
+        z-index: 2;
+    }
+
+    &__body {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0px 5px 0px;
+    }
+
+    &__logo {
+        position: relative;
+        z-index: 5;
+        flex: 0 0 100px;
+
+        & .img-svg{
+            width: 100%;
+        }
+    }
+        &__bag {
+            position: relative;
+            display: block;
+            z-index: 5;
+            //background-color: red;
+            padding: 5px;
+        }
+
+        &__bag-img {
+            position: relative;
+        & .img-svg{
+            width: 30px;
+            height: 30px;
+        }
+        }
+
+        &__bag-count {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            bottom: 0;
+            right: 0;
+            height: 20px;
+            width: 20px;
+            padding: 2px;
+            background-color: $color1;
+            border-radius: 50%;
+            span{
+                color: $color2;
+                font-weight: 600;
+                letter-spacing: 0;
+            }
+        }
+        
+    &__burger {
+        display: none;
+    }
+
+    &__menu {
+    }
+
+    &__list {
+    display: flex;
+    position: relative;
+    z-index: 5;
+    & li{
+        margin:0px 0px 0px 20px;
+        @media (max-width:$md2+px){
+            margin:0px 0px 0px 15px
+        } 
+    }
+    }
+
+    &__link {
+        color: $color4;
+        letter-spacing: 2px;
+        font-weight: 600;
+        text-transform: uppercase;
+        transition: color 0.2s linear;
+        position: relative;
+        
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: $color1;
+            transition: all 0.2s linear;
+            
+        }
+        &:hover{
+            color: $color1;
+            &::after{
+            width: 100%;
+            }
+        }
+    }
+}

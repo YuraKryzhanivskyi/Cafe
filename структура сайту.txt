@@ -1,0 +1,111 @@
+header
+	HOME
+	MENU
+	RESERVATION
+	REVIEWS
+	ABOUT US
+	CONTACTS
+
+main page 
+	full screen photo
+	title
+	subtitle
+	
+about
+	about chef
+	
+why chose us
+	cards 
+		icon
+		text
+		
+popular this week
+	cards 
+		to bag
+		
+menu
+	tabs filter
+		cards(img, title, sub, to bag)  
+		show more
+		
+reviews
+	slider
+		photo
+		name
+		text
+contacts
+	map
+	adress
+	phone
+	schedule
+
+
+ABOUT. SEPARATED
+	full story
+		by years
+			photo
+			text
+	staff
+		
+
+RESERVATION
+	arrangement of tables 
+	
+
+FAQ
+	piano
+	
+Карточки блюда
+	назва
+	коротки опис/складові
+	ціна
+	спан для скидки
+	при кліку додаємо (дварази додасть 2 рази)
+	додати в любимі
+	вибрати кількість
+	
+recipe from the chef
+	video
+	ingredients
+
+	
+ЕКРАН
+	кабінет
+	показує любимі
+	показує історію покупок ????
+	показує дані про себе дефолт(адрес імя телефон)
+	
+	
+	
+
+"Oswald" заголовки кнопки
+
+
+Architects Daughter під заголовки 
+
+
+Open Sans контент великий текст 
+
+#fff
+#cf9b67
+#333
+#6b6b6b
+#fafafa
+#212121
+#fdb552 було на його сайті
+40px
+30px
+20px
+14px
+	
+
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
