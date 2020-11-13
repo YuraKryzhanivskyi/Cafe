@@ -18,6 +18,8 @@ $(document).ready(function () {
         speed: 1000,
         easing: 'ease',
         infinite: false,
+        youchThrshold: 10,
+        //waitForAnimate: false,
         responsive: [
             {
                 breakpoint: 1186,
@@ -31,7 +33,6 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
-                    arrows: false,
                 }
             },
             {
@@ -39,6 +40,9 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    
+                    arrows: false,
+
 
 
                 }

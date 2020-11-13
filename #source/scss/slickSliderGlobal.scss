@@ -71,7 +71,9 @@
     width: 10px;
     height: 10px;
     background-color: $color1;
+    transition: all .5s linear;
 }
 .slick-dots li.slick-active button{
-    background-color: $color2;
+    background-color: transparent;
+    border: 2px solid $color1;
 }

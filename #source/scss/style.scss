@@ -18,7 +18,7 @@ $md1:$container-mw+15;
 $md2:992; 
 $md3:768; 
 $md4:576; 
-$color1:#cf9b67;
+$color1:#f3b762;
 $color2:#333;
 $color3:#6b6b6b;
 $color4:#fafafa;
@@ -75,34 +75,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 //!</СІТКА>
 
 
-//!<ФАЙЛИ СТИЛІВ СТОРІНОК ТА ЕЛЕМЕНТІВ>
 
-//preloader
-@import "preloader.scss";
-
-//кнопки
-@import "button.scss";
-
-//header
-@import "header.scss";
-
-//menu
-@import "menu.scss";
-
-//footer
-@import "footer.scss";
-
-//соц мережі/месенджери
-@import "social.scss";
-
-//slick-slider стилі глобальні мої
-@import "slickSliderGlobal.scss";
-
-//pop-up
-@import "popUp.scss";
-
-//thankYou
-@import "thankYou.scss";
 
 
 //!</ФАЙЛИ СТИЛІВ СТОРІНОК ТА ЕЛЕМЕНТІВ>
@@ -129,7 +102,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
         background-color:$color1;
     }
     }
-
+.subtitle{
+    font-size: 24px;
+    color: $color2;
+    font-family: "Architects Daughter";
+    letter-spacing: 1px;
+    margin: 0px 0px 40px 0px;
+}
 
 //home ===========================================================================
 .home {
@@ -201,7 +180,43 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
     }
 }
 // ===========================================================================
+//!<ФАЙЛИ СТИЛІВ СТОРІНОК ТА ЕЛЕМЕНТІВ>
 
+//preloader
+@import "preloader.scss";
+
+//кнопки
+@import "button.scss";
+
+//header
+@import "header.scss";
+
+//menu
+@import "menu.scss";
+
+//menu
+@import "how.scss";
+
+//menu
+@import "about.scss";
+
+//contacts
+@import "contacts.scss";
+
+//footer
+@import "footer.scss";
+
+//соц мережі/месенджери
+@import "social.scss";
+
+//slick-slider стилі глобальні мої
+@import "slickSliderGlobal.scss";
+
+//pop-up
+@import "popUp.scss";
+
+//thankYou
+@import "thankYou.scss";
 
 
 

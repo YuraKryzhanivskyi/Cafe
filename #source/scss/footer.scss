@@ -1,7 +1,15 @@
 .footer {
-
+    background-color: #171717;
     &__body {
+        color: #999999;
+        padding: 20px;
+        margin: 0 auto;
+        text-align: center;
+        & .dev{
+            color: $color1;
+        }
     }
+    
 }
 
 

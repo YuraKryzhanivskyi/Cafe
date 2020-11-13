@@ -1,3 +1,10 @@
+
+how
+-choose you meal
+-chef prepares it
+-meal IS DELIVERED
+-enjoy your meal
+
 header
 	HOME
 	MENU

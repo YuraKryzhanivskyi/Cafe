@@ -10,7 +10,34 @@
     max-width: none;
     padding: 0 10px;
 }
+//how
+.how{
+    &__title {
+        margin-bottom: 30px;
+    }
+    & .container{
+        max-width: none;
+        padding: 0 30px;
+    }
+}
+.how-row{
+    &__item {
+        flex: 0 0 50%;
+    }
+    &__item-body {
+        margin: 35px 20px 0px 5px;
+    }
+}
+//contacts
+.contacts {
+    &__map {
+        flex: 0 0 60%;
+    }
+    &__info{
+        flex: 0 0 40%;
+    }
 
+}
 }
 //768
 @media (max-width:$md3+px){
@@ -138,6 +165,31 @@ body._lock{
 .tabs-content-card {
     padding: 5px;
 }
+//contacts
+.contacts {
+    &__map {
+        flex: 0 0 55%;
+    }
+    &__info{
+        flex: 0 0 45%;
+    }
+    &__title {
+        font-size: 34px;
+        color: $color4;
+    }
+
+}
+//about
+.about {
+    &__picture {
+        flex: 0 0 100%;
+    }
+
+    &__info {
+        flex: 0 0 100%;
+        padding: 0px 0px 30px 0px;
+    }
+}
 }
 //576
 @media (max-width:$md4+px){
@@ -146,6 +198,10 @@ body._lock{
 }
 //home
 .home{
+    &__title{
+        font-size: 45px;
+        line-height: 45px;
+    }
     &__subtitle{
         font-size: 30px;
     }
@@ -156,11 +212,49 @@ body._lock{
 }
 .menu-slider{
     position: relative;
-    padding: 0 40px;
+    padding: 0;
 }
 .slick-arrow{
     height: 40px;
     width: 40px;
     margin: -20px 0px 0px 0px;
+}
+//how
+.how{
+    margin: 40px 0px 0px 0px;
+}
+.how-row{
+    &__item {
+        flex: 0 0 100%;
+        margin: 20px 0;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        
+    }
+    &__item-body {
+        &:last-child{
+            margin: 0;
+        }
+    }
+}
+//contacts
+.contacts {
+    margin: 40px 0px 0px 0px;
+    &__map {
+        flex: 0 0 100%;
+    }
+    &__info{
+        flex: 0 0 100%;
+    }
+    &__title {
+        font-size: 34px;
+        color: $color4;
+    }
+
+}
+//about
+.about{
+    margin: 40px 0px 0px 0px;
 }
 }
