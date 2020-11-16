@@ -13,7 +13,7 @@
 .slick-track{
     display: flex;
     justify-content: center;
-    //align-items: flex-start;
+    align-items: flex-start;
 }
 /* Слайд */
 .slick-slide{}
@@ -29,7 +29,7 @@
 .slick-arrow{
     position: absolute;
     top: 50%;
-    z-index: 10;
+    //z-index: 10;
     font-size: 0;
     height: 60px;
     width: 60px;
@@ -38,16 +38,16 @@
 /* Стрелка влево */
 .slick-arrow.slick-prev{
     left: 0;
-    background: url('/img/icon/Left-arrow.svg') 0 0 / 100% no-repeat;
+    background: url('img/icon/Left-arrow.svg') 0 0 / 100% no-repeat;
 }
 /* Стрелка вправо */
 .slick-arrow.slick-next{
     right: 0;
-    background: url('/img/icon/Right-arrow.svg') 0 0 / 100% no-repeat;
+    background: url('img/icon/Right-arrow.svg') 0 0 / 100% no-repeat;
 }
 /* Стрелка не активная */
 .slick-arrow.slick-disabled{
-    opacity: 0;
+    opacity: .2;
 }
 /* Точки (булиты) */
 .slick-dots{
@@ -71,7 +71,7 @@
     width: 10px;
     height: 10px;
     background-color: $color1;
-    transition: all .5s linear;
+    //transition: all .5s linear;
 }
 .slick-dots li.slick-active button{
     background-color: transparent;

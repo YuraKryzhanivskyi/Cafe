@@ -1,0 +1,60 @@
+.raves {
+    margin: 70px 0px 0px 0px;
+
+    &__title {
+        margin: 0px 0px 30px 0px;
+        
+    }
+
+    &__slider {
+    }
+
+    &__colum {
+        padding: 5px;
+        width: 300px;
+        height: auto;
+    }
+
+    &__item {
+        //background-color: $color1;
+        border-radius: 10px;
+        padding: 10px;
+        border: 5px solid $color1;
+
+    }
+
+    &__media {
+        min-height: 150px;
+        overflow: hidden;
+        position: relative;
+        margin: 0px 0px 15px 0px;
+        
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__content{
+
+    }
+    &__name {
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        color: $color1;
+        margin: 0px 0px 10px 0px;
+    }
+
+    &__text {
+        color: $color2;
+        font-weight: 500;
+    line-height: 1.2;
+    font-size: 18px;
+    margin: 0;
+
+    }
+}

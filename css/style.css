@@ -861,6 +861,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 150px;
   width: 150px;
   margin: 25px 0 15px 0;
+  border-radius: 50%;
 }
 .how-row__picture img {
   top: 0;
@@ -928,6 +929,52 @@ h1, h2, h3, h4, h5, h6 {
 .about__text {
   color: #333;
   line-height: 1.5;
+}
+
+.raves {
+  margin: 70px 0px 0px 0px;
+}
+.raves__title {
+  margin: 0px 0px 30px 0px;
+}
+.raves__colum {
+  padding: 5px;
+  width: 300px;
+  height: auto;
+}
+.raves__item {
+  border-radius: 10px;
+  padding: 10px;
+  border: 5px solid #f3b762;
+}
+.raves__media {
+  min-height: 150px;
+  overflow: hidden;
+  position: relative;
+  margin: 0px 0px 15px 0px;
+}
+.raves__media img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.raves__name {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  color: #f3b762;
+  margin: 0px 0px 10px 0px;
+}
+.raves__text {
+  color: #333;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 18px;
+  margin: 0;
 }
 
 #map {
@@ -1048,6 +1095,9 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 /* Слайд */
@@ -1059,7 +1109,6 @@ h1, h2, h3, h4, h5, h6 {
 .slick-arrow {
   position: absolute;
   top: 50%;
-  z-index: 10;
   font-size: 0;
   height: 60px;
   width: 60px;
@@ -1069,18 +1118,18 @@ h1, h2, h3, h4, h5, h6 {
 /* Стрелка влево */
 .slick-arrow.slick-prev {
   left: 0;
-  background: url("/img/icon/Left-arrow.svg") 0 0/100% no-repeat;
+  background: url("img/icon/Left-arrow.svg") 0 0/100% no-repeat;
 }
 
 /* Стрелка вправо */
 .slick-arrow.slick-next {
   right: 0;
-  background: url("/img/icon/Right-arrow.svg") 0 0/100% no-repeat;
+  background: url("img/icon/Right-arrow.svg") 0 0/100% no-repeat;
 }
 
 /* Стрелка не активная */
 .slick-arrow.slick-disabled {
-  opacity: 0;
+  opacity: 0.2;
 }
 
 /* Точки (булиты) */
@@ -1111,9 +1160,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 10px;
   height: 10px;
   background-color: #f3b762;
-  -webkit-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
-  transition: all 0.5s linear;
 }
 
 .slick-dots li.slick-active button {
